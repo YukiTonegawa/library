@@ -4,6 +4,7 @@
 #include <array>
 #include <numeric>
 #include <algorithm>
+#include "../math/function.hpp"
 
 template<typename T>
 struct range_sum{
@@ -88,7 +89,6 @@ struct range_composite_flip{
     return {x * X, y * X + Y, Z * x + z};
   }
 };
-#include "../math/function.hpp"
 // f(x) = min(max(x + a, b), c)
 template<typename T>
 struct range_clamp{
