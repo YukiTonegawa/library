@@ -94,29 +94,4 @@ public:
     return p->get(id, idx);
   }
 };
-/*
-#include <iostream>
-int main(){
-  std::cin.tie(nullptr);
-  std::ios::sync_with_stdio(false);
-  int q;
-  std::cin >> q;
-  persistent_array_iter<long long, long long> pai(0);
-
-  for(int i = 0; i < q; i++){
-    int t;
-    std::cin >> t;
-    if(t == 0){
-      long long k, x;
-      std::cin >> k >> x;
-      pai = pai.set(k, x);
-    }else{
-      long long k;
-      std::cin >> k;
-      std::cout << pai.get(k) << '\n';
-    }
-  }
-  return 0;
-}
-*/
 #endif
