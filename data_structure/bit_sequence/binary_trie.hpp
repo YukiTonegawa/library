@@ -27,6 +27,8 @@ private:
   void insert(node* &v, Idx k, int x, Idx l, Idx r, bool unique){
     if(!v){
       v = make_node(k);
+      v->sz = x;
+      eval(v);
       return;
     }
     if(v->idx == k){
